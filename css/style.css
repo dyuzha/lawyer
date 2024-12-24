@@ -1,0 +1,165 @@
+.wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0;
+  /* background-color: #123; */
+}
+
+.name {
+  color: #FFF;
+}
+
+/* HEADER */
+.top-header {
+  background-color: #44465D;
+  z-index: 2;
+  padding: 8px;
+  width: 100%;
+  height: 10px;
+  position: relative;
+}
+
+header {
+  margin: 0;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #FFF;
+  color: #44465D;
+  /* height: 11vh; */
+  padding: 0px;
+  position: absolute;
+  /* top: 10 */
+}
+
+.header {
+  /* overflow: hidden; */
+  background-color: #FFF;
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 10px;
+  /* top: 0; */
+}
+
+.top-header a {
+  color: #FFF;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 0 !important;
+}
+
+.header-right {
+  float: right;
+  display: flex;
+  align-items: center;
+}
+
+.main-heading {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* overflow: 0; */
+
+}
+
+.preview p {
+  font-size: 50px;
+}
+
+
+.header img {
+  width: 50px;
+}
+
+
+.header a {
+  float: left;
+  color: #44465D;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+
+  .header-right {
+    float: none;
+  }
+}
+
+/* IMG */
+.banner {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  top: 0;
+  float: center;
+}
+
+
+/* BUTTONS */
+
+.preview {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  top: 200px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  float: center;
+  margin: auto;
+}
+
+
+.book-button {
+  padding: 15px 30px;
+  border-radius: 5px;
+  background-color: #C1B697;
+  color: #FFF;
+}
+
+
+.more-button {
+  padding: 15px 30px;
+  border-radius: 5px;
+  background-color: #C1B697;
+  color: #44465D;
+}
+
+.contacts-button {
+  padding: 15px 30px;
+  border-radius: 5px;
+  background-color: #44465D;
+  color: #FFF;
+}
+
+input[type=”text” i] {
+  padding: 8px 20px;
+  border-radius: 50px;
+  background-color: #123;
+  border-color: white;
+  margin-right: 30px;
+  border: 0;
+}
