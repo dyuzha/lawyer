@@ -1,0 +1,18 @@
+* {
+  color: #000;
+  font-family: Georgia, serif;
+}
+
+#top-header a {
+  color: #FFF;
+  font-family: system-ui;
+}
+
+#top-header {
+  background-color: #44465D;
+}
+
+#main-header button {
+  background-color: #C1B697;
+  color: #FFF;
+}
