@@ -3,6 +3,19 @@
   font-family: Georgia, serif;
 }
 
+button {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+#name {
+  color: #FFF;
+}
+
+#lawyer {
+  color: #C1B697;
+}
+
+
 #top-header a {
   color: #FFF;
   font-family: system-ui;
@@ -12,7 +25,32 @@
   background-color: #44465D;
 }
 
+#main-header {
+  font-weight: 800;
+}
+
 #main-header button {
   background-color: #C1B697;
   color: #FFF;
+}
+
+#contacts-button,
+#more-button {
+  font-size: 30px;
+  border-radius: 5px;
+  padding: 2%;
+}
+
+#more-button {
+  background-color: #C1B697;
+  color: #000;
+}
+
+#contacts-button {
+  background-color: #44465D;
+  color: #FFF;
+}
+
+#banner {
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
 }

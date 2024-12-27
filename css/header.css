@@ -11,6 +11,8 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 #main-header {
