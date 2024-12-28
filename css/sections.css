@@ -1,83 +1,85 @@
+section .container h2 {
+  font-family: Georgia, serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 7%;
+}
+
 /* ===== */
 /* SHARE */
 /* ===== */
 
 section .container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2%;
-  grid-template-areas: "l r";
-  padding: 5% 0;
+  grid-template-columns: repeat(20, 1fr);
+  margin: 8% 3%;
 }
 
-section .container h2 {
-  font-family: Georgia, serif;
-  font-weight: 800;
-  font-size: 60px;
-  color: #44465D;
-  line-height: 1.2;
-  margin-top: 0;
-  margin-bottom: 7%;
+section #about {
+  grid-template-areas: 
+"i i i i i i i i . c c c c c c c c c c .";
 }
 
-section .section-left, .section-right {
-  padding: 0 10%;
+section #contacts {
+  grid-template-areas: 
+". c c c c c c c c c . i i i i i i i i i";
 }
 
-section .section-left {
-  grid-area: l;
+section .image {
+  grid-area: i;
 }
 
-section .section-right {
-  grid-area: r;
+section .content {
+  grid-area: c;
 }
 
-section img {
-  display: block;
-  max-width: 100%;
-}
 
 /* ======== */
 /* CONTACTS */
 /* ======== */
 
-section a {
-    font-size: 30px;
+section #contacts a {
+    font-size: 25px;
     line-height: 2;
-}
-
-section a .text {
-    color: #000;
 }
 
 
 @media only screen and (max-width:768px) {
   section .container {
     grid-template-columns: repeat(1, 1fr);
+    margin: 8% 3%;
   }
 
-  section .container {
-    grid-template-areas:
-      "r"
-      "l";
-  }
+    section #about {
+      grid-template-areas: 
+      "c"
+      "i";
+    }
 
-  section #reverse{
-    grid-template-areas:
-      "l"
-      "r";
-  }
+    section #contacts {
+      grid-template-areas: 
+      "c"
+      "i";
+    }
+
+
 
   section .container h2 {
-    font-size: 30px;
+    font-size: 26px;
+    padding: 0 3%;
   }
 
+  section .image {
+      padding: 5% 0;
+  }
 
     /* ======== */
     /* CONTACTS */
     /* ======== */
 
-    section a {
+    section #contacts a {
         font-size: 15px;
         /* line-height: 2; */
     }

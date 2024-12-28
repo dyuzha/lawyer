@@ -63,10 +63,14 @@ nav {
 }
 
 
-/* section a .text{ */
-/*     color: #000; */
-/* } */
+section a .text{
+    color: #000;
+}
 
+
+section .container h2 {
+  color: #44465D;
+}
 
 
 
