@@ -18,9 +18,13 @@ button {
 }
 
 
-#top-header a {
+#top-header a{
   color: #FFF;
   font-family: system-ui;
+}
+
+#top-header i, .text{
+    color: #FFF;
 }
 
 #top-header {
@@ -45,15 +49,33 @@ nav {
 
 
 #more-button {
-  background-color: rgba(68, 70, 93, 1);
+  background-color: rgba(68, 70, 93, 0.9);
   color: #000;
 }
 
 #contacts-button {
-  background-color: rgba(193, 182, 151, 1);
+  background-color: rgba(193, 182, 151, 0.8);
   color: #FFF;
 }
 
 #banner {
   text-shadow: 0px 0.2px 1px #C1B697;
+}
+
+
+/* section a .text{ */
+/*     color: #000; */
+/* } */
+
+
+
+
+
+footer {
+    background-color: #44465D;
+    /* color: #FFF; */
+}
+
+footer .container * {
+    color: #FFF;
 }

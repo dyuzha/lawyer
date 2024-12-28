@@ -1,0 +1,31 @@
+footer {
+    display: flex;
+    width: 100%;
+    padding: 3% 0;
+}
+
+footer .container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 1000px) {
+    footer {
+        /* border: 1px solid #0F0; */
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        padding: auto;
+    }
+    footer .container {
+        flex-direction: column;
+        width: auto;
+        justify-content: left;
+        /* border: 1px solid #F00; */
+    }
+    footer a {
+        padding: 4% 0;
+    }
+
+}

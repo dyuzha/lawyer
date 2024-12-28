@@ -1,0 +1,21 @@
+#top-header i {
+padding: 0px 10px;
+}
+
+#top-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-left: 1%;
+  padding-right: 2%;
+}
+
+@media screen and (max-width: 1000px) {
+  #top-header {
+    padding-left: 2%;
+  }
+
+  #top-header .text{
+    display: none;
+  }
+

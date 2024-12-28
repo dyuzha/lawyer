@@ -1,13 +1,16 @@
-.container {
+/* ===== */
+/* SHARE */
+/* ===== */
+
+section .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2%;
   grid-template-areas: "l r";
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding: 5% 0;
 }
 
-.container h2 {
+section .container h2 {
   font-family: Georgia, serif;
   font-weight: 800;
   font-size: 60px;
@@ -17,11 +20,15 @@
   margin-bottom: 7%;
 }
 
-.section-left {
+section .section-left, .section-right {
+  padding: 0 10%;
+}
+
+section .section-left {
   grid-area: l;
 }
 
-.section-right {
+section .section-right {
   grid-area: r;
 }
 
@@ -30,17 +37,50 @@ section img {
   max-width: 100%;
 }
 
+/* ======== */
+/* CONTACTS */
+/* ======== */
+
+section a {
+    font-size: 30px;
+    line-height: 2;
+}
+
+section a .text {
+    color: #000;
+}
+
 
 @media only screen and (max-width:768px) {
-  .container {
+  section .container {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  section .container {
     grid-template-areas:
       "r"
       "l";
-    padding: 3%;
   }
 
-  .container h2 {
+  section #reverse{
+    grid-template-areas:
+      "l"
+      "r";
+  }
+
+  section .container h2 {
     font-size: 30px;
   }
+
+
+    /* ======== */
+    /* CONTACTS */
+    /* ======== */
+
+    section a {
+        font-size: 15px;
+        /* line-height: 2; */
+    }
+
 }
+
